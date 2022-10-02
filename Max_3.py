@@ -5,7 +5,6 @@ def Maximum(No1, No2, No3):
 		return No1
 	elif (No2 >= No3):
 		return No2
-
 	else:
 		return No3
 
