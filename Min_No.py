@@ -1,27 +1,31 @@
 ########################################################
-# Demonstration of Addition using import AdditionModule
+#	Demonstration of Minimum number
 ########################################################
 
-import AdditionModule
+def Minimum(No1,No2):
+	if No1 < No2:
+		return No1
+	else:
+		return No2
 
 def main():
+
 	print("Enter first number : ")
-	No1 = int(input())
+	Input1 = int(input())
 
 	print("Enter second number : ")
-	No2 = int(input())
+	Input2 = int(input())
 
-	Addition = AdditionModule.Addition(No1,No2)
-	print("Addition is : ",Addition)
+	Ans = Minimum(Input1, Input2)
+	print("Minimum number is : ",Ans)
 
 if __name__=="__main__":
 	main()
 
-
 ########################################################
-#	Input	:	Enter first number :
+#	Input   : 	Enter first number :
 #				10
 #				Enter second number :
 #				20
-#	Output	:	Addition is :  30
+#	Output	:	Minimum number is :  10
 ########################################################
