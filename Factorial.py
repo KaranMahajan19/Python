@@ -7,7 +7,7 @@ def factorial(iNo):
 	if iNo == 1:
 		return 1
 	else:
-		return (iNo * factorial(iNo-1))
+		return (iNo * factorial(iNo-1))		# Recursive call
 
 	
 
