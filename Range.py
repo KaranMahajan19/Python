@@ -1,33 +1,22 @@
-########################################################
-#	Demonstration of Range function
-########################################################
 
-def Range():
-	print("Display 5 by displacemnt of 1 : ")
-	for i in range(1,5+1):
-		print(i)
+print("Application to demonstration of range.")
 
-	print("Display 10 numbers by displacemnt of 2 : ")
-	for i in range(1,10,2):
-		print(i)
+# range(start,end,displacement)
+		# start	:	by default 1
+		# end 	:	No default value
+		# displacement	:	by default 1
 
-def main():
-	Range()
+arr = range(1,5)
+print(arr)
 
-if __name__=="__main__":
-	main()
+print("-----(1,5)-----")
+for i in range(1,5):
+	print(i)
 
-########################################################
-#	Output	:	Display 5 by displacemnt of 1 : 
-#				1
-#				2
-#				3
-#				4
-#				5
-#				Display 10 numbers by displacemnt of 2 : 
-#				1
-#				3
-#				5
-#				7
-#				9
-########################################################
+print("-----1,5,1-----")
+for i in range(0,5,1):
+	print(i)
+
+print("-----(1,10,2)-----")
+for i in range(1,10,2):
+	print(i+1)
